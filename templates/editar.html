@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="POST">
+    <input name="nombre" value="{{ producto[1] }}" class="form-control mb-2">
+    <input name="categoria" value="{{ producto[2] }}" class="form-control mb-2">
+    <input name="precio" value="{{ producto[3] }}" class="form-control mb-2">
+    <input name="stock" value="{{ producto[4] }}" class="form-control mb-2">
+    <button class="btn btn-warning">Actualizar</button>
+</form>
+{% endblock %}
